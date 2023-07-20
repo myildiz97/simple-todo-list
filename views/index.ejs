@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+    <div class="container">
+      <div class="date">
+        <%= locals.today %>
+      </div>
+      <hr />
+      <div class="list">
+        <form action="/add" method="post">
+          <input
+            type="text"
+            id="todo"
+            name="todo"
+            placeholder="New Item"
+          >
+          <button type="submit">
+            <i class="fa-solid fa-plus fa-xl"></i>
+          </button>
+        </form>
+        <hr />
+        <div class="items">
+          <% locals.listItems.map(item => {  %>
+              <div class="new-item">
+                <div class="item">
+                  <%= item %>
+                </div>   
+              </div>
+              <hr />
+          <% }) %>
+        </div>
+      </div>
+    </div>
+<%- include("partials/footer.ejs") %>

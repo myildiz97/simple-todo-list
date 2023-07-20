@@ -1,0 +1,160 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #fff;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-color: burlywood;
+}
+
+#navbar h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+main {
+  width: 250px;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+}
+
+.date {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.container hr, .list hr {
+  width: 100%;
+  border: 2px solid burlywood;
+  margin-bottom: 1em;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list hr {
+  margin-top: 1em;
+}
+
+.list form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  height: 70%;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  margin-left: 3px;
+}
+
+input[type="text"]:focus, input[type="text"]:hover {
+  border: 2px solid cadetblue;
+  border-radius: 10px;
+  line-height: 10px;
+}
+
+
+button[type="submit"] {
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: 70%;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.items hr {
+  width: 100%;
+  border: 2px solid beige;
+  margin-bottom: 1em;
+}
+
+.new-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+@media(min-width: 420px){
+  main {
+    width: 400px;
+  }
+}
+
+@media(min-width: 550px){
+  main {
+    width: 500px;
+  }
+}
+
+@media(min-width: 720px){
+  main {
+    width: 700px;
+  }
+}
